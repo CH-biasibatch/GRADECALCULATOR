@@ -1,0 +1,54 @@
+body{
+    background-image: url("https://c.pxhere.com/photos/40/66/drawing_pad_note_pad_white_background_pen_blank_pad_business_paper-652303.jpg!d");
+    font-family: Avenir;
+    text-align: center;
+}
+
+button {
+    width: 100px;
+    color: black ;
+    font-family: Avenir;
+    font-size: 14px;
+    margin:auto;
+}
+
+#dataTable{
+    margin-top: 20px;
+}
+
+#tableStyle{
+    width: 29%;
+    margin: auto;
+}
+
+#finalStyle{
+    text-align: center;
+    width: 22%;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 50px;
+}
+
+#styleFinal{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+#styleCurrent{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+#currentGrade{
+    font-size: 20px;
+}
+
+#gradeRequired{
+    font-size: 20px;
+}

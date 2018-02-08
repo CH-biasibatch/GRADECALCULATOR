@@ -11,35 +11,58 @@
 </head>
 <body>
 
-homework
-    <td><input type="text" id="homework" value="" size="25"></td>
-    <td><input type="text" id="homeworkWeight" value="" size="25"></td>
+<h1><b>GRADE CALCULATOR</b></h1>
 
-<br>
-<br>
+<h2 id="styleCurrent">current grade</h2>
 
-classwork
-    <td><input type="text" id="classwork" value="" size="25"></td>
-    <td><input type="text" id="classworkWeight" value="" size="25"></td>
-
+<div id = "tableStyle">
+    <table id="dataTable">
+    <tr>
+        <th>CATEGORY</th>
+        <th>POINTS</th>
+        <th>WEIGHT</th>
+    </tr>
+    <tr id="hwRow">
+        <td> homework </td>
+        <td><input type="text" id="homework" value="100,100,90"></td>
+        <td><input type="text" id="homeworkWeight" value="10"></td>
+    </tr>
+    <tr id="cwRow">
+        <td> classwork </td>
+        <td><input type="text" id="classwork" value="80,90,80"></td>
+        <td><input type="text" id="classworkWeight" value="15"></td>
+    </tr>
+    <tr id="asRow">
+        <td> assessment </td>
+        <td><input type="text" id="assessments" value="70,80,80"></td>
+        <td><input type="text" id="assessmentsWeight" value="55"></td>
+    </tr>
+    <tr id="parRow">
+        <td> participation </td>
+        <td><input type="text" id="participation" value="120,100,90"></td>
+        <td><input type="text" id="participationWeight" value="20"></td>
+    </tr>
+</table>
+</div>
 <br>
-<br>
+<button id="button" onclick="calculateCurrentGrade()">CALCULATE</button>
+<b><div id="currentGrade"></div></b>
 
-assessments
-    <td><input type="text" id="assessments" value="" size="25"></td>
-    <td><input type="text" id="assessmentsWeight" value="" size="25"></td>
+<h2 id="styleFinal">final grade</h2>
 
+<table id="finalStyle">
+<tr>
+    <th>GRADE DESIRED</th>
+    <th>FINAL WEIGHT</th>
+</tr>
+<tr>
+    <td><input type="text" id="final" value="92"></td>
+    <td><input type="text" id="finalWeight" value="12"></td>
+</tr>
+</table>
 <br>
-<br>
-
-participation
-    <td><input type="text" id="participation" value="" size="25"></td>
-    <td><input type="text" id="participationWeight" value="" size="25"></td>
-
-<br>
-<br>
-
-<button id="button" onclick="doIt()">CALCULATE</button>
+<button id="button2" onclick="calculateFinalGrade()">CALCULATE</button>
+<b><div id="gradeRequired"></div></b>
 
 </body>
 </html>
